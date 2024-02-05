@@ -142,7 +142,7 @@ class $modify(CreatorLayer) {
 		}
 		
 		if (Loader::get()->isModLoaded("cvolton.betterinfo")) {
-			geode::log::info("{}", "BetterInfo Detected. Moved Button.");
+			log::info("{}", "BetterInfo Detected. Moved Button.");
 			this->getChildByID("cvolton.betterinfo/center-right-menu")->setPositionY(260);
 		}
 
@@ -205,7 +205,7 @@ void DPLayer::openList(CCObject* sender) {
 bool DPLayer::init() {
 	if (!CCLayer::init()) return false;
 
-        geode::log::info("{}", "Opened the Demon Progression menu.");
+        log::info("{}", "Opened the Demon Progression menu.");
 
         //auto testMenu = CCMenu::create();
 
